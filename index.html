@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnestopNDT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-white py-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="images/logo.jpg" alt="OnestopNDT Logo" class="h-10">
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="contact-form-section" class="my-8">
+            <div class="bg-white p-8 shadow-md rounded-lg">
+                <h2 class="text-3xl mb-4">Got any questions?</h2>
+                <p class="mb-6">Let's discuss it over a cup of coffee.</p>
+                <form id="contact-form" action="form.php" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded" required>
+                        <span class="error-message text-red-500 text-sm"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label for="organization" class="block text-gray-700">Organization Name</label>
+                        <input type="text" id="organization" name="organization" class="w-full border border-gray-300 p-2 rounded" required>
+                        <span class="error-message text-red-500 text-sm"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded" required>
+                        <span class="error-message text-red-500 text-sm"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label for="contact-number" class="block text-gray-700">Contact Number</label>
+                        <input type="text" id="contact-number" name="contact-number" class="w-full border border-gray-300 p-2 rounded" required>
+                        <span class="error-message text-red-500 text-sm"></span>
+                    </div>
+                    <div class="mb-4 md:col-span-2">
+                        <label for="message" class="block text-gray-700">Message</label>
+                        <textarea id="message" name="message" class="w-full border border-gray-300 p-2 rounded" required></textarea>
+                        <span class="error-message text-red-500 text-sm"></span>
+                    </div>
+                    <div class="md:col-span-2">
+                        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit</button>
+                        <div id="form-success" class="text-green-500 text-sm mt-2 hidden">Form submitted successfully!</div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="map-section" class="my-8">
+            <div class="relative">
+                <!-- <img src="https://via.placeholder.com/800x400.png?text=Map+Placeholder" alt="Map" class="w-full"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.184560072313!2d73.00443887505381!3d19.143396882075102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bfeb4288ae8d%3A0x8b330290504e58fa!2sLaser%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1720073313061!5m2!1sen!2sin" width="1450" height="490" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="absolute bottom-4 left-4 bg-blue-900 text-white p-4 rounded-lg shadow-lg">
+                    <h3 class="text-lg font-bold">OnestopNDT</h3>
+                    <p>PAP/R/406 Rabale MIDC Near Dol Electric Company Rabale MIDC, Navi Mumbai - 400701</p>
+                    <p>Landline: 123-456-7890</p>
+                    <a href="#" class="text-blue-300 hover:underline">Google Map Link</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-section" class="my-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="images/Companies.jpg" alt="Image 1" height = "30px" width = "30px" class="w-full" >
+                <img src="images/Jobs.jpg" alt="Image 2" class="w-full">
+                <img src="images/Articles.jpg" alt="Image 3" class="w-full">
+                <img src="images/Webinars.jpg" alt="Image 4" class="w-full">
+                <img src="images/Forums.jpg" alt="Image 5" class="w-full">
+                <img src="images/Application_Notes.jpg" alt="Image 6" class="w-full">
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2024 OnestopNDT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    height: 40px;
+}
+
+/* Contact Form Section */
+#contact-form-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact-form-section p {
+    margin-bottom: 2rem;
+}
+
+#contact-form .error-message {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Map Section */
+#map-section {
+    margin-top: 4rem;
+    position: relative;
+}
+
+#map-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#map-section .absolute {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #1e3a8a;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+#map-section .absolute a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+#map-section .absolute a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Section */
+#gallery-section {
+    margin-top: 4rem;
+}
+
+#gallery-section img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#gallery-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin: 0;
+}
